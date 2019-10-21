@@ -1,0 +1,27 @@
+<!-- 管理列表 -->
+<%- include('../includes/head.ejs')%>
+<%- include('../includes/navigation.ejs')%>
+<main>
+	<% if (prods.length > 0) {%>
+	<h1>我的产品管理</h1>
+	<p>这是产品管理列表...</p>
+	<ul>
+		<% prods.forEach(function(item){%>
+			<li style="margin-bottom: 30px;">
+				<strong>标题：</strong><%=item.title %>|<strong>描述：</strong><%=item.description %>|<strong>价格：</strong><%=item.price %>
+				<a href="/admin/edit-product/<%=item.id %>">
+					<button>编辑</button>
+				</a>
+				<form action="/admin/delete-product/" method="post">
+					<input type="hidden" name="productId" value="<%=item.id %>">
+					<button type="submit">删除</button>
+				</form>
+            </li>
+		<% }) %>
+	</ul>
+	<% } else { %>
+	<p>no content</p>
+	<% } %>
+</main>
+<%- include('../includes/end.ejs')%>
+

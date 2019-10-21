@@ -1,0 +1,23 @@
+<%- include('../includes/head.ejs') %>
+<%- include('../includes/navigation.ejs')%>
+<main>
+    <% if (products.length > 0) {%>
+        <ul>
+            <% products.forEach(p=> { %>
+            <li>
+                <p>
+                    <%= p.title %> - <%= p.cartItem.quantity %>
+                    <form action="/cart-delete-item" method="post">
+                        <input type="hidden" name="productId" value="<%= p.id %>" />
+                        <button type="submit">删除</button>
+                    </form>
+                </p>
+            </li>
+            <% })%>
+        </ul>
+        <a href="/create-order">下订单</a>
+    <% } else { %>
+        <h1>购物车暂无</h1>
+    <% } %>    
+</main>
+<%- include('../includes/end.ejs') %>

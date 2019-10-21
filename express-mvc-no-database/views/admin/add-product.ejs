@@ -1,0 +1,26 @@
+<%- include('../includes/head.ejs')%>
+<%- include('../includes/navigation.ejs')%>
+
+<main>
+    <form action="/admin/add-product" method="POST">
+        <p>
+            标题：
+            <input type="text" name="title">
+        </p>
+        <p>
+            图片：
+            <input type="text" name="imgUrl">
+        </p>
+        <p>
+            价格：
+            <input type="text" name="price">
+        </p>
+        <p>
+            描述：
+            <input type="text" name="description">
+        </p>
+        <button type="submit">添加商品</button>
+    </form>
+</main>
+
+<%- include('../includes/end.ejs')%>

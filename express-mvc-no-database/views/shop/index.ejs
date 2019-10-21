@@ -1,0 +1,20 @@
+<%- include('../includes/head.ejs')%>
+<%- include('../includes/navigation.ejs')%>
+<main>
+	<% if (prods.length > 0) {%>
+	<h1>我的产品</h1>
+	<p>这是产品首页...</p>
+	<ul>
+		<% prods.forEach(function(item){%>
+			<li>
+                <%=item.title %>|<%=item.price %>
+                <button class="btn">添加到购物车</button>
+            </li>
+		<% }) %>
+	</ul>
+	<% } else { %>
+	<p>no content</p>
+	<% } %>
+</main>
+<%- include('../includes/end.ejs')%>
+

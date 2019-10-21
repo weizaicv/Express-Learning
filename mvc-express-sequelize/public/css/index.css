@@ -1,0 +1,10 @@
+body{
+	background-color: #ddd;
+}
+.shop-header{
+	background-color: #fff;
+}
+.active{
+	font-weight: bold;
+	background: red;
+}

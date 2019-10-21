@@ -1,0 +1,18 @@
+<%- include('../includes/head.ejs')%>
+<%- include('../includes/navigation.ejs')%>
+<main>
+	<h1>产品详情列表</h1>
+    <p>
+        <div>标题：<%=product.title %></div>
+        <div>描述：<%=product.description %></div>
+        <div>价格：<%=product.price %></div>
+        <div>图片：<%=product.imgUrl %></div>
+        <form action="/cart" method="post">
+            <button type="submit">添加购物车</button>
+            <input type="hidden" name="productId" value="<%=product.id %>">
+        </form>
+    </p>
+    
+</main>
+<%- include('../includes/end.ejs')%>
+

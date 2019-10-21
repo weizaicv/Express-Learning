@@ -1,0 +1,21 @@
+{
+  "name": "Node.js-sequelize-relation-crud",
+  "version": "1.0.0",
+  "description": "#### Description sequelize库的用法，一对一，多对一，多对多",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/weizaijiayou/Node.js-sequelize-relation-crud.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.19.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

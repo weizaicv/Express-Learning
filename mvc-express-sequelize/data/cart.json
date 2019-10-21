@@ -1,0 +1,13 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "quality": 8
+        },
+        {
+            "id": "4",
+            "quality": 1
+        }
+    ],
+    "totalPrice": 1200
+}

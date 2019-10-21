@@ -1,0 +1,15 @@
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/" class="<%= path === '/' ? 'active' : '' %>">首页商店</a></li>
+				<li><a href="/cart" class="<%= path === '/cart' ? 'active' : '' %>">购物车</a></li>
+				<li><a href="/products" class="<%= path === '/products' ? 'active' : '' %>">产品</a></li>
+				<li><a href="/orders" class="<%= path === '/orders' ? 'active' : '' %>">订单</a></li>
+				<li><a href="/admin/add-product" class="<%= path === '/admin/add-product' ? 'active' : '' %>">添加商品</a></li>
+				<li><a href="/admin/products" class="<%= path === '/admin/products' ? 'active' : '' %>">管理商品</a></li>
+			</ul>
+		</nav>
+	</header>

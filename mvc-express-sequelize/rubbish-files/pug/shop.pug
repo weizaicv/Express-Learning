@@ -1,0 +1,14 @@
+extends layouts/main-layout.pug
+
+block content
+    main
+        if prods.length > 0
+            div.grid
+                each product in prods
+                    article.card.prodcut-item
+                        header.cart-headers
+                            h1.product-title #{product.title}
+                        div.card-image
+                            img(src="http://pic25.nipic.com/20121112/9252150_150552938000_2.jpg",style="width:200px;height:200px")
+        else
+            h1 没有
